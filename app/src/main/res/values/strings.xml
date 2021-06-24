@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AsianCuisine</string>
+    <string name="AuthorizationString">Авторизация</string>
+    <string name="TelefonString">Укажите свой телефоный номер, что бы сделать заказ</string>
+    <string name="BeginButtonString">НАЧАТЬ</string>
+    <string name="SkipButtonString">Пропустить</string>
+    <string name="TermsOfUseString">Авторизуясь я соглашаюсь с <u>условиями использования</u> </string>
+</resources>
