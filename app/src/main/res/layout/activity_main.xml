@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/CL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="128dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="28dp">
 
     <LinearLayout
         android:id="@+id/LLvertical"
@@ -13,11 +14,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/firstTextView"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:background="@color/white" />
 
         <TextView
             android:id="@+id/authorizationTextView"
@@ -31,8 +27,7 @@
             android:text="@string/AuthorizationString"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:typeface="normal"
-            tools:text="@string/AuthorizationString" />
+            android:typeface="normal" />
 
         <TextView
             android:id="@+id/telefonTextView"
@@ -40,8 +35,8 @@
             android:layout_height="wrap_content"
             android:gravity="top|start"
             android:paddingStart="16dp"
-            android:paddingRight="27dp"
             android:paddingTop="16dp"
+            android:paddingRight="27dp"
             android:text="@string/TelefonString"
             android:textColor="@color/black" />
 
@@ -50,13 +45,13 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginTop="35dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/rounded_edittext"
             android:ems="10"
+            android:hint="+8 800 2222 600"
             android:inputType="textPhonetic|phone"
-            android:paddingStart="16dp"
-            android:hint="+8 800 2222 600" />
+            android:paddingStart="16dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonBegin"
@@ -64,8 +59,8 @@
             android:layout_height="56dp"
             android:layout_marginStart="70dp"
             android:layout_marginTop="240dp"
-            android:background="@color/colorbegin"
             android:layout_marginEnd="70dp"
+            android:background="@color/colorbegin"
             android:text="@string/BeginButtonString" />
 
         <TextView
@@ -77,8 +72,7 @@
             android:layout_marginEnd="70dp"
             android:gravity="center_horizontal"
             android:text="@string/SkipButtonString"
-            android:textColor="@color/colorskip"
-             />
+            android:textColor="@color/colorskip" />
 
         <TextView
             android:id="@+id/textViewTermsOfUse"
@@ -91,4 +85,4 @@
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
