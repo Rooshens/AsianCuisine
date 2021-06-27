@@ -51,6 +51,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
         android:text="Корзина"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvSwiftBook" />
@@ -111,6 +112,7 @@
             android:textSize="18dp"
             app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodQuantityTomYam"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.80"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -182,7 +184,9 @@
             android:textSize="18dp"
             app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodQuantitySethPhiladelphia"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.80"
+            />
 
         <ImageView
             android:id="@+id/ivCloseListIconSethPhiladelphia"
@@ -253,7 +257,9 @@
             android:textSize="18dp"
             app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodQuantityDessertСroissant"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.80"
+            />
 
         <ImageView
             android:id="@+id/ivCloseListIconDessertСroissant"
@@ -268,6 +274,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <TextView
         android:id="@+id/tvComments"
         android:layout_width="wrap_content"
@@ -275,7 +282,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="48dp"
         android:text="Комментарий"
-        android:textSize="16dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/clTableDessertСroissant" />
@@ -286,12 +293,25 @@
         android:layout_width="match_parent"
         android:layout_height="123dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:background="#40000000"
         android:hint="Укажите дополнительную информацию \nк заказу"
-
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvComments" />
+        app:layout_constraintTop_toBottomOf="@id/tvComments"
+        app:tint="#A1A1A1" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvCommentField"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+
 
     <TextView
         android:id="@+id/tvAdditionally"
@@ -300,7 +320,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:text="Дополнительно"
-        android:textSize="16dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvCommentField" />
@@ -379,19 +399,14 @@
         android:id="@+id/apbToOrder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="23dp"
         android:layout_marginStart="70dp"
         android:layout_marginEnd="70dp"
-        android:text="ЗАКАЗАТЬ"
+        android:layout_marginBottom="23dp"
         android:background="@color/colorbegin"
-        />
-
-    </androidx.appcompat.widget.AppCompatButton>
-
-
+        android:text="ЗАКАЗАТЬ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
