@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         //У вложенного в ScrollView всегда должна быть layout_height="wrap_content"
+        //
 
 
         <TextView
