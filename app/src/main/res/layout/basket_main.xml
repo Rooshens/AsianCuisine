@@ -7,8 +7,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clRoot"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">//У вложенного в ScrollView всегда должна быть
-        layout_height="wrap_content"
+        android:layout_height="wrap_content">
+        //У вложенного в ScrollView всегда должна быть layout_height="wrap_content"
 
 
         <TextView
@@ -161,8 +161,8 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
                 android:src="@drawable/img_setfiladelphia"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -174,8 +174,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_bold"
                 android:text="Сет Запеченая филадел..."
-                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@id/ivFoodFotoSethPhiladelphia"
                 app:layout_constraintTop_toTopOf="@id/ivFoodFotoSethPhiladelphia" />
 
@@ -185,23 +187,27 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_bold"
                 android:text="Кол-во 1 шт."
-                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="@id/ivFoodFotoSethPhiladelphia"
-                app:layout_constraintStart_toEndOf="@id/ivFoodFotoSethPhiladelphia" />
+                app:layout_constraintStart_toEndOf="@id/ivFoodFotoSethPhiladelphia"
+                app:layout_constraintTop_toBottomOf="@+id/tvFoodNameSethPhiladelphia" />
 
             <TextView
                 android:id="@+id/tvPriceSethPhiladelphia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/rounded_price"
-                android:text=" 115 ₽ "
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="115 ₽"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="14sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodQuantitySethPhiladelphia"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.80"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/ivCloseListIconSethPhiladelphia" />
 
             <ImageView
                 android:id="@+id/ivCloseListIconSethPhiladelphia"
@@ -233,8 +239,8 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
                 android:src="@drawable/img_desertcroissant"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -246,8 +252,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_bold"
                 android:text="Десерт круассан с грецкими"
-                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@id/ivFoodFotoDessertСroissant"
                 app:layout_constraintTop_toTopOf="@id/ivFoodFotoDessertСroissant" />
 
@@ -257,23 +265,27 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_bold"
                 android:text="Кол-во 1 шт."
-                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="@id/ivFoodFotoDessertСroissant"
-                app:layout_constraintStart_toEndOf="@id/ivFoodFotoDessertСroissant" />
+                app:layout_constraintStart_toEndOf="@id/ivFoodFotoDessertСroissant"
+                app:layout_constraintTop_toBottomOf="@id/tvFoodNameDessertСroissant" />
 
             <TextView
                 android:id="@+id/tvPriceDessertСroissant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/rounded_price"
-                android:text=" 115 ₽ "
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="115 ₽"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="14sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tvFoodQuantityDessertСroissant"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.80"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/ivCloseListIconDessertСroissant" />
 
             <ImageView
                 android:id="@+id/ivCloseListIconDessertСroissant"
@@ -356,9 +368,9 @@
 
         <RadioGroup
             android:id="@+id/rgPay"
-            app:layout_constraintTop_toBottomOf="@id/swPickUpService"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/swPickUpService">
 
             <RadioButton
                 android:id="@+id/rbByCardOn"

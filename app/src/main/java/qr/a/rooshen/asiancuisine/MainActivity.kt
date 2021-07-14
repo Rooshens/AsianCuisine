@@ -10,7 +10,7 @@ import android.widget.ScrollView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.basket_main)
+        setContentView(R.layout.activity_main)
 
 
     }
